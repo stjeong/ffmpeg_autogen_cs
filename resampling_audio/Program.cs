@@ -3,6 +3,7 @@ using FFmpeg.AutoGen.Example;
 
 namespace resampling_audio
 {
+    // https://ffmpeg.org/doxygen/trunk/resampling_audio_8c-example.html
     internal unsafe class Program
     {
         static int Main(string[] args)

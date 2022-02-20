@@ -10,6 +10,6 @@ namespace FFmpeg.OSDepends
     static internal class NativeMethods
     {
         [DllImport("Kernel32.dll", EntryPoint = "RtlMoveMemory", SetLastError = false)]
-        internal static extern void MoveMemory(IntPtr dest, IntPtr src, int size);
+        internal static unsafe extern void MoveMemory(byte* dest, byte* src, int size);
     }
 }
