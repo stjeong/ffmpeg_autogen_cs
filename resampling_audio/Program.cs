@@ -1,11 +1,7 @@
 ﻿using FFmpeg.AutoGen;
 using FFmpeg.AutoGen.Example;
-using System;
-using System.IO;
-using System.Runtime.InteropServices;
-using System.Text;
 
-namespace ffmpeg_pgm_solve
+namespace resampling_audio
 {
     internal unsafe class Program
     {
