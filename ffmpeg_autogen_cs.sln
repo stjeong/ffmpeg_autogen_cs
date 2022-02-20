@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32210.238
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "resampling_audio", "resampling_audio\resampling_audio.csproj", "{D064B3DA-7432-43B3-BE8C-11C1A8FFE66E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libraries", "Libraries", "{7040E459-1378-4273-9DB8-6CB9E854F319}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "x64", "x64", "{89A458A2-C0A3-4505-90B6-B327240BBE94}"
+	ProjectSection(SolutionItems) = preProject
+		Libraries\x64\avcodec-59.dll = Libraries\x64\avcodec-59.dll
+		Libraries\x64\avdevice-59.dll = Libraries\x64\avdevice-59.dll
+		Libraries\x64\avfilter-8.dll = Libraries\x64\avfilter-8.dll
+		Libraries\x64\avformat-59.dll = Libraries\x64\avformat-59.dll
+		Libraries\x64\avutil-57.dll = Libraries\x64\avutil-57.dll
+		Libraries\x64\postproc-56.dll = Libraries\x64\postproc-56.dll
+		Libraries\x64\swresample-4.dll = Libraries\x64\swresample-4.dll
+		Libraries\x64\swscale-6.dll = Libraries\x64\swscale-6.dll
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D064B3DA-7432-43B3-BE8C-11C1A8FFE66E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D064B3DA-7432-43B3-BE8C-11C1A8FFE66E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D064B3DA-7432-43B3-BE8C-11C1A8FFE66E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D064B3DA-7432-43B3-BE8C-11C1A8FFE66E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{89A458A2-C0A3-4505-90B6-B327240BBE94} = {7040E459-1378-4273-9DB8-6CB9E854F319}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B2760E8A-5840-465B-AC28-B14FD6661258}
+	EndGlobalSection
+EndGlobal
