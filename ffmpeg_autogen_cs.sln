@@ -26,6 +26,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Samples", "Samples", "{60F6
 		Samples\file_example_MP4_1920_18MG.mp4 = Samples\file_example_MP4_1920_18MG.mp4
 	EndProjectSection
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "muxing", "muxing\muxing.csproj", "{1BC7EA53-1CB9-400B-9431-491C3A2F45B4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -40,6 +42,10 @@ Global
 		{C906961E-D4AC-4352-9070-487DEC21AF5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C906961E-D4AC-4352-9070-487DEC21AF5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C906961E-D4AC-4352-9070-487DEC21AF5F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1BC7EA53-1CB9-400B-9431-491C3A2F45B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1BC7EA53-1CB9-400B-9431-491C3A2F45B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1BC7EA53-1CB9-400B-9431-491C3A2F45B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1BC7EA53-1CB9-400B-9431-491C3A2F45B4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

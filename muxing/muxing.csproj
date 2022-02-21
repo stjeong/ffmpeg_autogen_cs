@@ -1,23 +1,11 @@
-<Project Sdk="Microsoft.NET.Sdk">
-
+﻿<Project Sdk="Microsoft.NET.Sdk">
 	<PropertyGroup>
+		<TargetFramework>net6.0-windows</TargetFramework>
 		<OutputType>Exe</OutputType>
-		<TargetFramework>net6.0</TargetFramework>
-		<ImplicitUsings>enable</ImplicitUsings>
+		<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+		<UseWindowsForms>true</UseWindowsForms>
 		<Nullable>enable</Nullable>
-		<AllowUnsafeBlocks>True</AllowUnsafeBlocks>
 	</PropertyGroup>
-
-	<ItemGroup>
-		<Compile Include="..\Libraries\FFmpegBinariesHelper.cs" Link="FFmpeg\FFmpegBinariesHelper.cs" />
-		<Compile Include="..\Libraries\FFmpegHelper.cs" Link="FFmpeg\FFmpegHelper.cs" />
-		<Compile Include="..\Libraries\NativeMethods.cs" Link="FFmpeg\NativeMethods.cs" />
-	</ItemGroup>
-
-	<ItemGroup>
-		<Folder Include="FFmpeg\bin\x64\" />
-	</ItemGroup>
-
 	<ItemGroup>
 		<None Include="..\Libraries\x64\avcodec-59.dll" Link="FFmpeg\bin\x64\avcodec-59.dll">
 			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -44,13 +32,20 @@
 			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 		</None>
 	</ItemGroup>
-
+	<ItemGroup>
+		<Compile Include="..\Libraries\FFmpegBinariesHelper.cs" Link="FFmpeg\FFmpegBinariesHelper.cs" />
+		<Compile Include="..\Libraries\FFmpegHelper.cs" Link="FFmpeg\FFmpegHelper.cs" />
+		<Compile Include="..\Libraries\NativeMethods.cs" Link="FFmpeg\NativeMethods.cs" />
+	</ItemGroup>
 	<ItemGroup>
 		<PackageReference Include="FFmpeg.AutoGen" Version="5.0.0" />
 	</ItemGroup>
-	
+	<ItemGroup>
+		<Folder Include="FFmpeg\" />
+	</ItemGroup>
+
 	<Target Name="MyClean" BeforeTargets="Clean">
-		<Message Importance="high" Text="Delete = $(ProjectDir)$(OutputPath)test.dat'" />
-		<Delete Files="$(ProjectDir)$(OutputPath)test.dat" />
+		<Message Importance="high" Text="Delete = $(ProjectDir)$(OutputPath)test.mp4" />
+		<Delete Files="$(ProjectDir)$(OutputPath)test.mp4" />
 	</Target>
 </Project>

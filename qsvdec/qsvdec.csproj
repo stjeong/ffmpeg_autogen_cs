@@ -43,4 +43,16 @@
 			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 		</None>
 	</ItemGroup>
+
+	<Target Name="MyClean" BeforeTargets="Clean">
+		<Message Importance="high" Text="Delete = $(ProjectDir)$(OutputPath)test.mp4'" />
+		<Delete Files="$(ProjectDir)$(OutputPath)test.mp4" />
+
+		<ItemGroup>
+			<FilesToDelete Include="$(ProjectDir)$(OutputPath)*.pgm"/>
+		</ItemGroup>
+
+		<Message Importance="high" Text="Delete = $(ProjectDir)$(OutputPath)*.pgm'" />
+		<Delete Files="@(FilesToDelete)" />
+	</Target>
 </Project>

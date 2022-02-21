@@ -48,7 +48,7 @@ namespace qsvdec
 
             // https://file-examples.com/index.php/sample-video-files/sample-mp4-files/
             string inputfile = Path.Combine(dirPath, "..", "..", "..", "Samples", "file_example_MP4_1920_18MG.mp4");
-            string outputfile = Path.Combine(dirPath, "test2.mp4");
+            string outputfile = Path.Combine(dirPath, "test.mp4");
 
             try
             {

@@ -35,7 +35,7 @@ namespace resampling_audio
             int ret;
 
             string dirPath = Path.GetDirectoryName(typeof(Program).Assembly.Location) ?? "";
-            string dst_filename = Path.Combine(dirPath, "test.data");
+            string dst_filename = Path.Combine(dirPath, "test.dat");
 
             using FileStream dst_file = File.OpenWrite(dst_filename);
 

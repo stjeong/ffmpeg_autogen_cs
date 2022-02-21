@@ -82,5 +82,10 @@ namespace FFmpeg.AutoGen.Example
                 }
             }
         }
+
+        public static unsafe double av_q2d(long ts, AVRational* ar)
+        {
+            return (ar->num / (double)ar->den) * ts;
+        }
     }
 }
