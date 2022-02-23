@@ -5,8 +5,23 @@ using System.Text;
 
 namespace FFmpeg.AutoGen.Example
 {
+    public enum AV_BUFFERSRC_FLAG
+    {
+        NO_CHECK_FORMAT = 1,
+        PUSH = 4,
+        KEEP_REF = 8,
+    }
+
     internal static class FFmpegHelper
     {
+        public static AVRational AV_TIME_BASE_Q
+        {
+            get
+            {
+                return new AVRational { num = 1, den = ffmpeg.AV_TIME_BASE };
+            }
+        }
+
         public static unsafe string av_strerror(int error)
         {
             var bufferSize = 1024;
