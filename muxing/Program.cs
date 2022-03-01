@@ -139,7 +139,7 @@ namespace muxing
         {
             AVRational* time_base = &(fmt_ctx->streams[pkt->stream_index]->time_base);
 
-            Console.WriteLine($"pts:{pkt->pts,9:0,0} pts_time: {FFmpegHelper.av_q2d(pkt->pts, time_base),10:#0.000000} dts: {pkt->dts,9:0,0} dts_time: {FFmpegHelper.av_q2d(pkt->dts, time_base),10:#0.000000} duration: {pkt->duration,5:0,0} duration_time: {FFmpegHelper.av_q2d(pkt->duration, time_base):0.000000} stream_index: {pkt->stream_index}");
+            Console.WriteLine($"pts:{pkt->pts,9:0,0} pts_time: {FFmpegHelper.av_ts2timestr(pkt->pts, time_base),10:#0.000000} dts: {pkt->dts,9:0,0} dts_time: {FFmpegHelper.av_ts2timestr(pkt->dts, time_base),10:#0.000000} duration: {pkt->duration,5:0,0} duration_time: {FFmpegHelper.av_ts2timestr(pkt->duration, time_base):0.000000} stream_index: {pkt->stream_index}");
         }
 
         public static int write_frame(AVFormatContext* fmt_ctx, AVCodecContext* c, AVStream* st, AVFrame* frame, AVPacket* pkt)

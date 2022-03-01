@@ -115,7 +115,7 @@ namespace resampling_audio
                 dst_file.Write(new ReadOnlySpan<byte>(dst_data[0], dst_bufsize));
             } while (t < 10);
 
-            if ((ret = get_format_from_sample_fmt(out fmt, dst_sample_fmt)) < 0)
+            if ((ret = FFmpegHelper.get_format_from_sample_fmt(out fmt, dst_sample_fmt)) < 0)
             {
                 goto end;
             }
@@ -162,38 +162,8 @@ namespace resampling_audio
             }
         }
 
-        static int get_format_from_sample_fmt(out string fmt, AVSampleFormat sample_fmt)
-        {
-            fmt = "";
-
-            foreach (var item in sample_fmt_entry.entries)
-            {
-                if (item.sample_fmt == sample_fmt)
-                {
-                    fmt = (BitConverter.IsLittleEndian) ? item.fmt_le : item.fmt_be;
-                    return 0;
-                }
-            }
-
-            return ffmpeg.AVERROR(ffmpeg.EINVAL);
-        }
-
     }
 
-    public class sample_fmt_entry
-    {
-        public AVSampleFormat sample_fmt;
-        public string fmt_be = "";
-        public string fmt_le = "";
 
-        public static sample_fmt_entry[] entries = new sample_fmt_entry[]
-        {
-            new sample_fmt_entry { sample_fmt = AVSampleFormat.AV_SAMPLE_FMT_U8, fmt_be = "u8", fmt_le = "u8" },
-            new sample_fmt_entry { sample_fmt = AVSampleFormat.AV_SAMPLE_FMT_S16, fmt_be = "s16be", fmt_le = "s16le" },
-            new sample_fmt_entry { sample_fmt = AVSampleFormat.AV_SAMPLE_FMT_S32, fmt_be = "s32be", fmt_le = "s32le" },
-            new sample_fmt_entry { sample_fmt = AVSampleFormat.AV_SAMPLE_FMT_FLT, fmt_be = "f32be", fmt_le = "f32le" },
-            new sample_fmt_entry { sample_fmt = AVSampleFormat.AV_SAMPLE_FMT_DBL, fmt_be = "f64be", fmt_le = "f64le" },
-        };
-    }
 
 }

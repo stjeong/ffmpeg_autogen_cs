@@ -24,6 +24,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Samples", "Samples", "{60F62A4B-48DA-418E-A185-C63C765C9615}"
 	ProjectSection(SolutionItems) = preProject
 		Samples\file_example_MP4_1920_18MG.mp4 = Samples\file_example_MP4_1920_18MG.mp4
+		Samples\sample-10s.mp4 = Samples\sample-10s.mp4
 	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "muxing", "muxing\muxing.csproj", "{1BC7EA53-1CB9-400B-9431-491C3A2F45B4}"
@@ -31,6 +32,10 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "avio_reading", "avio_reading\avio_reading.csproj", "{0F657D43-C181-4748-9DAB-1B3F60AB0FA9}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "filtering_video", "filtering_video\filtering_video.csproj", "{84A4AA31-5B9B-4E6F-8629-B92AE3C17BFF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "encode_video", "encode_video\encode_video.csproj", "{5377031E-9FBB-4663-80AA-B7FB57D022B6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "demuxing_decoding", "demuxing_decoding\demuxing_decoding.csproj", "{8DEBD475-7760-40C9-8438-8C66F21E6305}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -58,6 +63,14 @@ Global
 		{84A4AA31-5B9B-4E6F-8629-B92AE3C17BFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{84A4AA31-5B9B-4E6F-8629-B92AE3C17BFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{84A4AA31-5B9B-4E6F-8629-B92AE3C17BFF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5377031E-9FBB-4663-80AA-B7FB57D022B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5377031E-9FBB-4663-80AA-B7FB57D022B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5377031E-9FBB-4663-80AA-B7FB57D022B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5377031E-9FBB-4663-80AA-B7FB57D022B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8DEBD475-7760-40C9-8438-8C66F21E6305}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DEBD475-7760-40C9-8438-8C66F21E6305}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DEBD475-7760-40C9-8438-8C66F21E6305}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DEBD475-7760-40C9-8438-8C66F21E6305}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
