@@ -3,7 +3,7 @@ using FFmpeg.AutoGen.Example;
 using System;
 using System.IO;
 
-namespace encode_video
+namespace demuxing_decoding
 {
     internal unsafe class Program
     {

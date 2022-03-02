@@ -1,0 +1,53 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<TargetFramework>net6.0-windows</TargetFramework>
+		<OutputType>Exe</OutputType>
+		<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+		<UseWindowsForms>true</UseWindowsForms>
+		<Nullable>enable</Nullable>
+	</PropertyGroup>
+	<ItemGroup>
+		<Compile Include="..\Libraries\FFmpegBinariesHelper.cs" Link="FFmpeg\FFmpegBinariesHelper.cs" />
+		<Compile Include="..\Libraries\FFmpegHelper.cs" Link="FFmpeg\FFmpegHelper.cs" />
+		<Compile Include="..\Libraries\NativeMethods.cs" Link="FFmpeg\NativeMethods.cs" />
+	</ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="CustomMessageLoop" Version="1.0.1" />
+		<PackageReference Include="FFmpeg.AutoGen" Version="5.0.0" />
+		<PackageReference Include="OpenCvSharp4" Version="4.5.5.20211231" />
+		<PackageReference Include="OpenCvSharp4.runtime.win" Version="4.5.5.20211231" />
+	</ItemGroup>
+	<ItemGroup>
+		<Folder Include="FFmpeg\bin\x64\" />
+	</ItemGroup>
+	<ItemGroup>
+		<None Include="..\Libraries\x64\avcodec-59.dll" Link="FFmpeg\bin\x64\avcodec-59.dll">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+		<None Include="..\Libraries\x64\avdevice-59.dll" Link="FFmpeg\bin\x64\avdevice-59.dll">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+		<None Include="..\Libraries\x64\avfilter-8.dll" Link="FFmpeg\bin\x64\avfilter-8.dll">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+		<None Include="..\Libraries\x64\avformat-59.dll" Link="FFmpeg\bin\x64\avformat-59.dll">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+		<None Include="..\Libraries\x64\avutil-57.dll" Link="FFmpeg\bin\x64\avutil-57.dll">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+		<None Include="..\Libraries\x64\postproc-56.dll" Link="FFmpeg\bin\x64\postproc-56.dll">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+		<None Include="..\Libraries\x64\swresample-4.dll" Link="FFmpeg\bin\x64\swresample-4.dll">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+		<None Include="..\Libraries\x64\swscale-6.dll" Link="FFmpeg\bin\x64\swscale-6.dll">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+	</ItemGroup>
+	<Target Name="MyClean" BeforeTargets="Clean">
+		<Message Importance="high" Text="Delete = $(ProjectDir)$(OutputPath)test.dat'" />
+		<Delete Files="$(ProjectDir)$(OutputPath)test.dat" />
+	</Target>
+</Project>
