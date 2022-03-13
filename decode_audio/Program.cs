@@ -150,7 +150,7 @@ namespace decode_audio
                 }
 
                 int n_channels = c->channels;
-                string fmt = get_format_from_sample_fmt(sfmt);
+                string? fmt = get_format_from_sample_fmt(sfmt);
                 if (fmt == null)
                 {
                     break;
@@ -232,7 +232,7 @@ namespace decode_audio
             return true;
         }
 
-        static unsafe string get_format_from_sample_fmt(AVSampleFormat sample_fmt)
+        static unsafe string? get_format_from_sample_fmt(AVSampleFormat sample_fmt)
         {
             sample_fmt_entry[] sample_fmt_entries = {
                 new sample_fmt_entry(AVSampleFormat.AV_SAMPLE_FMT_U8, "u8", "u8"),
