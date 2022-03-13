@@ -70,6 +70,8 @@ namespace FFmpeg.AutoGen.Example
             return Marshal.PtrToStringAnsi(new IntPtr(ptr)) ?? "";
         }
 
+        // PGM File Viewer (browser-based)
+        // ; https://smallpond.ca/jim/photomicrography/pgmViewer/index.html
         public static unsafe void pgm_save(byte* buf, int wrap, int xsize, int ysize, string filename)
         {
             using FileStream fs = new FileStream(filename, FileMode.Create);

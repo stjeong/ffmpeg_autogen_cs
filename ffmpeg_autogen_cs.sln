@@ -24,6 +24,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Samples", "Samples", "{60F62A4B-48DA-418E-A185-C63C765C9615}"
 	ProjectSection(SolutionItems) = preProject
 		Samples\file_example_MP4_1920_18MG.mp4 = Samples\file_example_MP4_1920_18MG.mp4
+		Samples\mpeg1video_q0_naked.m1v = Samples\mpeg1video_q0_naked.m1v
 		Samples\sample-10s.mp4 = Samples\sample-10s.mp4
 		Samples\sample-12s.mp2 = Samples\sample-12s.mp2
 		Samples\sample-12s.mp3 = Samples\sample-12s.mp3
@@ -44,6 +45,8 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "hw_decode", "hw_decode\hw_decode.csproj", "{3A823208-6B59-455A-935A-2C1615FD54A8}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "decode_audio", "decode_audio\decode_audio.csproj", "{C036CB78-AD3A-4317-91FB-8DDF7A55A484}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "decode_video", "decode_video\decode_video.csproj", "{9E092FDB-145F-4CA1-A23D-38FEB92FDF0C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -91,6 +94,10 @@ Global
 		{C036CB78-AD3A-4317-91FB-8DDF7A55A484}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C036CB78-AD3A-4317-91FB-8DDF7A55A484}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C036CB78-AD3A-4317-91FB-8DDF7A55A484}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E092FDB-145F-4CA1-A23D-38FEB92FDF0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E092FDB-145F-4CA1-A23D-38FEB92FDF0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E092FDB-145F-4CA1-A23D-38FEB92FDF0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E092FDB-145F-4CA1-A23D-38FEB92FDF0C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
