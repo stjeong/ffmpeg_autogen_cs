@@ -56,6 +56,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "filter_audio", "filter_audi
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "filtering_audio", "filtering_audio\filtering_audio.csproj", "{1B31D6D9-B84F-4078-864F-B502470D125D}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "metadata", "metadata\metadata.csproj", "{355185DC-AE04-442C-9368-85549EB40DCA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -122,6 +124,10 @@ Global
 		{1B31D6D9-B84F-4078-864F-B502470D125D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1B31D6D9-B84F-4078-864F-B502470D125D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1B31D6D9-B84F-4078-864F-B502470D125D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{355185DC-AE04-442C-9368-85549EB40DCA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{355185DC-AE04-442C-9368-85549EB40DCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{355185DC-AE04-442C-9368-85549EB40DCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{355185DC-AE04-442C-9368-85549EB40DCA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
