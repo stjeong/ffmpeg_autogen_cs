@@ -52,6 +52,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "encode_audio", "encode_audi
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ffhash", "ffhash\ffhash.csproj", "{9EE5FF7D-08B5-4097-A8CC-2C11D7056E45}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "filter_audio", "filter_audio\filter_audio.csproj", "{B91E11E9-96BF-41B0-B9C2-26C7DF144FF9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -110,6 +112,10 @@ Global
 		{9EE5FF7D-08B5-4097-A8CC-2C11D7056E45}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9EE5FF7D-08B5-4097-A8CC-2C11D7056E45}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9EE5FF7D-08B5-4097-A8CC-2C11D7056E45}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B91E11E9-96BF-41B0-B9C2-26C7DF144FF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B91E11E9-96BF-41B0-B9C2-26C7DF144FF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B91E11E9-96BF-41B0-B9C2-26C7DF144FF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B91E11E9-96BF-41B0-B9C2-26C7DF144FF9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
