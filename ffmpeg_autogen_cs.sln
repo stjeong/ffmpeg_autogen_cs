@@ -58,6 +58,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "filtering_audio", "filterin
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "metadata", "metadata\metadata.csproj", "{355185DC-AE04-442C-9368-85549EB40DCA}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "scaling_video", "scaling_video\scaling_video.csproj", "{3525A4A1-5672-48A9-B024-0AA510E9EDDF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -128,6 +130,10 @@ Global
 		{355185DC-AE04-442C-9368-85549EB40DCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{355185DC-AE04-442C-9368-85549EB40DCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{355185DC-AE04-442C-9368-85549EB40DCA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3525A4A1-5672-48A9-B024-0AA510E9EDDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3525A4A1-5672-48A9-B024-0AA510E9EDDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3525A4A1-5672-48A9-B024-0AA510E9EDDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3525A4A1-5672-48A9-B024-0AA510E9EDDF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
