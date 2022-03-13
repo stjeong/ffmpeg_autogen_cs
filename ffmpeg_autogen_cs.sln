@@ -25,6 +25,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Samples", "Samples", "{60F6
 	ProjectSection(SolutionItems) = preProject
 		Samples\file_example_MP4_1920_18MG.mp4 = Samples\file_example_MP4_1920_18MG.mp4
 		Samples\sample-10s.mp4 = Samples\sample-10s.mp4
+		Samples\sample-12s.mp2 = Samples\sample-12s.mp2
 		Samples\sample-12s.mp3 = Samples\sample-12s.mp3
 	EndProjectSection
 EndProject
@@ -41,6 +42,8 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "transcode_aac", "transcode_aac\transcode_aac.csproj", "{76128DCF-02F2-4836-8885-90186B59D3F6}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "hw_decode", "hw_decode\hw_decode.csproj", "{3A823208-6B59-455A-935A-2C1615FD54A8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "decode_audio", "decode_audio\decode_audio.csproj", "{C036CB78-AD3A-4317-91FB-8DDF7A55A484}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -84,6 +87,10 @@ Global
 		{3A823208-6B59-455A-935A-2C1615FD54A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3A823208-6B59-455A-935A-2C1615FD54A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3A823208-6B59-455A-935A-2C1615FD54A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C036CB78-AD3A-4317-91FB-8DDF7A55A484}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C036CB78-AD3A-4317-91FB-8DDF7A55A484}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C036CB78-AD3A-4317-91FB-8DDF7A55A484}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C036CB78-AD3A-4317-91FB-8DDF7A55A484}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
