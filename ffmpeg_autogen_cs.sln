@@ -50,6 +50,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "decode_video", "decode_vide
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "encode_audio", "encode_audio\encode_audio.csproj", "{2A5E7698-5D16-4640-9741-86A16806E1A2}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ffhash", "ffhash\ffhash.csproj", "{9EE5FF7D-08B5-4097-A8CC-2C11D7056E45}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -104,6 +106,10 @@ Global
 		{2A5E7698-5D16-4640-9741-86A16806E1A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2A5E7698-5D16-4640-9741-86A16806E1A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2A5E7698-5D16-4640-9741-86A16806E1A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9EE5FF7D-08B5-4097-A8CC-2C11D7056E45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9EE5FF7D-08B5-4097-A8CC-2C11D7056E45}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9EE5FF7D-08B5-4097-A8CC-2C11D7056E45}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9EE5FF7D-08B5-4097-A8CC-2C11D7056E45}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
