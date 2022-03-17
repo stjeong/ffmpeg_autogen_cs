@@ -22,6 +22,18 @@ namespace FFmpeg.AutoGen.Example
             }
         }
 
+        internal static string av_ts2str(long ts)
+        {
+            if (ts == ffmpeg.AV_NOPTS_VALUE)
+            {
+                return "NOPTS";
+            }
+            else
+            {
+                return ts.ToString();
+            }
+        }
+
         public static unsafe double av_q2d(AVRational* ar)
         {
             return (ar->num / (double)ar->den);
