@@ -22,6 +22,19 @@ namespace FFmpeg.AutoGen.Example
             }
         }
 
+        // 2022-03-15 - cdba98bb80 - lavc 59.24.100 - avcodec.h codec_par.h
+        //   Update AVCodecContext for the new channel layout API: add ch_layout,
+        //   deprecate channels/channel_layout
+        public static unsafe int av_channel_layout_copy(/* AVChannelLayout *dst, AVChannelLayout* src */)
+        {
+            throw new NotImplementedException();
+        }
+
+        public static AVRational av_inv_q(AVRational ts)
+        {
+            return new AVRational { num = ts.den, den = ts.num };
+        }
+
         internal static string av_ts2str(long ts)
         {
             if (ts == ffmpeg.AV_NOPTS_VALUE)
