@@ -45,7 +45,7 @@
 	</ItemGroup>
 
 	<Target Name="MyClean" BeforeTargets="Clean">
-		<Message Importance="high" Text="Delete = $(ProjectDir)$(OutputPath)test.mp4'" />
-		<Delete Files="$(ProjectDir)$(OutputPath)test.mp4" />
+		<Message Importance="high" Text="Delete = $(ProjectDir)$(OutputPath)test.mov'" />
+		<Delete Files="$(ProjectDir)$(OutputPath)test.mov" />
 	</Target>
 </Project>
