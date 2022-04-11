@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "vaapi_transcode": {
+      "commandName": "Project",
+      "nativeDebugging": false
+    }
+  }
+}
