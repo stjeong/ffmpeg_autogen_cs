@@ -22,7 +22,7 @@ namespace metadata
             Console.WriteLine($"LIBAVFORMAT Version: {ffmpeg.LIBAVFORMAT_VERSION_MAJOR}.{ffmpeg.LIBAVFORMAT_VERSION_MINOR}");
 
             string dirPath = Path.GetDirectoryName(typeof(Program).Assembly.Location) ?? "";
-            string src_filename = Path.Combine(dirPath, "..", "..", "..", "Samples", "sample-10s.mp4");
+            string src_filename = Path.Combine(dirPath, "..", "..", "..", "..", "Samples", "sample-10s.mp4");
             show_metadata(src_filename);
         }
 

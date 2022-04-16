@@ -236,7 +236,7 @@ namespace vaapi_encode
             AVCodecContext* encoder_ctx = null;
 
             string dirPath = Path.GetDirectoryName(typeof(Program).Assembly.Location) ?? "";
-            string input_filename = Path.Combine(dirPath, "..", "..", "..", "Samples", "sample-10s.mp4");
+            string input_filename = Path.Combine(dirPath, "..", "..", "..", "..", "Samples", "sample-10s.mp4");
             string encode_codec_name = "h264_nvenc";
 
             string output_filename = Path.Combine(dirPath, "test.mp4");

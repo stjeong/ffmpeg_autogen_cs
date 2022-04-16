@@ -46,7 +46,7 @@ namespace filtering_audio
             }
 
             string dirPath = Path.GetDirectoryName(typeof(Program).Assembly.Location) ?? "";
-            string src_filename = Path.Combine(dirPath, "..", "..", "..", "Samples", "sample-12s.mp3");
+            string src_filename = Path.Combine(dirPath, "..", "..", "..", "..", "Samples", "sample-12s.mp3");
 
             do
             {

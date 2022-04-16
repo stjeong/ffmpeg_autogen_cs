@@ -24,7 +24,7 @@ namespace decode_video
             Console.WriteLine($"LIBAVFORMAT Version: {ffmpeg.LIBAVFORMAT_VERSION_MAJOR}.{ffmpeg.LIBAVFORMAT_VERSION_MINOR}");
 
             string dirPath = Path.GetDirectoryName(typeof(Program).Assembly.Location) ?? "";
-            string src_filename = Path.Combine(dirPath, "..", "..", "..", "Samples", "mpeg1video_q0.m1v");
+            string src_filename = Path.Combine(dirPath, "..", "..", "..", "..", "Samples", "mpeg1video_q0.m1v");
 
             video_decode_example(src_filename, AVCodecID.AV_CODEC_ID_MPEG1VIDEO, dirPath);
         }

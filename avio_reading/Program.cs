@@ -31,7 +31,7 @@ namespace avio_reading
             buffer_data bd = new buffer_data();
 
             string dirPath = Path.GetDirectoryName(typeof(Program).Assembly.Location) ?? "";
-            string input_filename = Path.Combine(dirPath, "..", "..", "..", "Samples", "sample-10s.mp4");
+            string input_filename = Path.Combine(dirPath, "..", "..", "..", "..", "Samples", "sample-10s.mp4");
 
             ret = ffmpeg.av_file_map(input_filename, &buffer, &buffer_size, 0, null);
             if (ret < 0)

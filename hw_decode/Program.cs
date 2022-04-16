@@ -29,7 +29,7 @@ namespace hw_decode
 
             string dirPath = Path.GetDirectoryName(typeof(Program).Assembly.Location) ?? "";
             string outputFilePath = Path.Combine(dirPath, "test.dat");
-            string input_file_path = Path.Combine(dirPath, "..", "..", "..", "Samples", "file_example_MP4_1920_18MG.mp4");
+            string input_file_path = Path.Combine(dirPath, "..", "..", "..", "..", "Samples", "file_example_MP4_1920_18MG.mp4");
 
             // C# - Console 응용 프로그램에서 UI 스레드 구현 방법
             // ; https://www.sysnet.pe.kr/2/0/12139

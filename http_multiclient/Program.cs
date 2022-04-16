@@ -129,11 +129,11 @@ namespace http_multiclient
             string dirPath = Path.GetDirectoryName(typeof(Program).Assembly.Location) ?? "";
 
             // in container, encoded
-            // in_uri = Path.Combine(dirPath, "..", "..", "..", "Samples", "sample-10s.mp4");
+            // in_uri = Path.Combine(dirPath, "..", "..", "..", "..", "Samples", "sample-10s.mp4");
             // can not play! (do you know how to play?)
 
             // no container, encoded
-            in_uri = Path.Combine(dirPath, "..", "..", "..", "Samples", "mpeg1video_q0.m1v");
+            in_uri = Path.Combine(dirPath, "..", "..", "..", "..", "Samples", "mpeg1video_q0.m1v");
             Console.WriteLine($"ffplay -autoexit -f mpegvideo {out_uri}");
 
             // no container, decoded(raw)

@@ -572,7 +572,7 @@ namespace transcoding
             uint i;
 
             string dirPath = Path.GetDirectoryName(typeof(Program).Assembly.Location) ?? "";
-            string input_filename = Path.Combine(dirPath, "..", "..", "..", "Samples", "sample-10s.mp4");
+            string input_filename = Path.Combine(dirPath, "..", "..", "..", "..", "Samples", "sample-10s.mp4");
 
             string output_filename = Path.Combine(dirPath, "test.mov");
 

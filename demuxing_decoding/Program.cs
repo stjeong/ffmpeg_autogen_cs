@@ -171,7 +171,7 @@ namespace demuxing_decoding
 
             // https://samplelib.com/sample-mp4.html
             string dirPath = Path.GetDirectoryName(typeof(Program).Assembly.Location) ?? "";
-            src_filename = Path.Combine(dirPath, "..", "..", "..", "Samples", "sample-10s.mp4");
+            src_filename = Path.Combine(dirPath, "..", "..", "..", "..", "Samples", "sample-10s.mp4");
 
             video_dst_filename = Path.Combine(dirPath, "video.out");
             audio_dst_filename = Path.Combine(dirPath, "audio.out");

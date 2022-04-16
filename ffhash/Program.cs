@@ -9,7 +9,7 @@ namespace ffhash
         static void Main(string[] args)
         {
             string dirPath = Path.GetDirectoryName(typeof(Program).Assembly.Location) ?? "";
-            string src_filename = Path.Combine(dirPath, "..", "..", "..", "Samples", "sample-10s.mp4");
+            string src_filename = Path.Combine(dirPath, "..", "..", "..", "..", "Samples", "sample-10s.mp4");
 
             using (FileStream fs = File.OpenRead(src_filename))
             using (SHA256 sha256 = SHA256.Create())

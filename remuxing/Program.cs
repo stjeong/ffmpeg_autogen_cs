@@ -41,7 +41,7 @@ namespace remuxing
 
             string dirPath = Path.GetDirectoryName(typeof(Program).Assembly.Location) ?? "";
             string filename = "sample-10s.mp4";
-            in_filename = Path.Combine(dirPath, "..", "..", "..", "Samples", filename);
+            in_filename = Path.Combine(dirPath, "..", "..", "..", "..", "Samples", filename);
 
             // For sample video: sample-10s.mp4
 

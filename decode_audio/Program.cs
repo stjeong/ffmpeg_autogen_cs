@@ -28,7 +28,7 @@ namespace decode_audio
             string dirPath = Path.GetDirectoryName(typeof(Program).Assembly.Location) ?? "";
             string outputFilePath = Path.Combine(dirPath, "test.dat");
 
-            string src_filename = Path.Combine(dirPath, "..", "..", "..", "Samples", "sample-12s.mp2");
+            string src_filename = Path.Combine(dirPath, "..", "..", "..", "..", "Samples", "sample-12s.mp2");
             decode_audio(src_filename, outputFilePath);
         }
 

@@ -570,7 +570,7 @@ namespace transcode_aac
             string dirPath = Path.GetDirectoryName(typeof(Program).Assembly.Location) ?? "";
 
             // https://samplelib.com/sample-mp3.html
-            string input_file_path = Path.Combine(dirPath, "..", "..", "..", "Samples", "sample-12s.mp3");
+            string input_file_path = Path.Combine(dirPath, "..", "..", "..", "..", "Samples", "sample-12s.mp3");
             string output_file_path = Path.Combine(dirPath, "output.aac");
 
             if (open_input_file(input_file_path, &input_format_context, &input_codec_conetxt) != 0)
